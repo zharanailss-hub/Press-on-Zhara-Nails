@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<title>ZharaNails - Detalle del Diseño</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f04299",
+            "background-light": "#fdfcfa",
+            "background-dark": "#1a1618",
+            "foreground-light": "#0f0d0e",
+            "foreground-dark": "#f5f2f3",
+            "foreground-muted-light": "#8b7e84",
+            "foreground-muted-dark": "#9c8f95",
+            "border-light": "#f0e8eb",
+            "border-dark": "#392e33",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .group:has(input:checked) span {
+      background-color: #f04299;
+      color: white;
+      border-color: #f04299;
+    }
+    .group:has(input:checked) {
+      border-color: #f04299;
+    }
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark px-10 py-4">
+<div class="flex items-center gap-4 text-foreground-light dark:text-foreground-dark">
+<div class="h-8 w-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_6_543)"><path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path><path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path></g><defs><clipPath id="clip0_6_543"><rect fill="white" height="48" width="48"></rect></clipPath></defs></svg>
+</div>
+<h2 class="text-xl font-bold">ZharaNails</h2>
+</div>
+<nav class="flex flex-1 justify-center">
+<ul class="flex items-center gap-10">
+<li><a class="text-base font-medium text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors" href="#">Inicio</a></li>
+<li><a class="text-base font-bold text-primary" href="#">Diseños</a></li>
+<li><a class="text-base font-medium text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors" href="#">Personalizar</a></li>
+<li><a class="text-base font-medium text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors" href="#">Tutoriales</a></li>
+<li><a class="text-base font-medium text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-11 w-11 items-center justify-center rounded-full bg-background-light dark:bg-border-dark hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<svg fill="currentColor" height="22" viewBox="0 0 256 256" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"></path></svg>
+</button>
+<button class="flex h-11 w-11 items-center justify-center rounded-full bg-background-light dark:bg-border-dark hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+<svg fill="currentColor" height="22" viewBox="0 0 256 256" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path></svg>
+</button>
+<div class="h-12 w-12 rounded-full bg-cover bg-center ring-2 ring-offset-2 ring-offset-background-light dark:ring-offset-background-dark ring-primary" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCP8tRTAHfBgmhcdp7RH6k2JQpxa4RYKJEDLQywtMY_XJNpyp5m0zF4obBqmuj3L7GxrsZS3dsGL-F6kclRw7zSY6cnFn8MUYGuLWkm7YNh7P4UE64PihXsjMh8ckLomyF0O98vP8vm_WZdyzPj8YgT3aNifF-6IDJiNdLhy7WDlhgmgRfbV3-NOkZ99sJwBcFlLgOmGzTqMAn46GzdYQLJ3-46maDs71X9iH1veaGp8b78fgLP9KFgQ6OJepibHDuYDYPFn9p6i9s');"></div>
+</div>
+</header>
+<main class="flex-1 px-4 py-12 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-screen-xl">
+<div class="text-sm">
+<a class="text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors" href="#">Diseños</a>
+<span class="mx-2 text-foreground-muted-light dark:text-foreground-muted-dark">/</span>
+<span class="font-medium text-foreground-light dark:text-foreground-dark">Diseño Floral Primaveral</span>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+<div class="flex flex-col gap-4">
+<div class="aspect-video w-full overflow-hidden rounded-xl shadow-lg">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBH8wFD3DcLF31Eab-vOWMEYQcrcfgKU0ZsGm8JSB6JBh32mS334npvo4oDCe08SXHlIf_woEd-ueC7xXQez8FSY9kLd_Ov4qJ2LnZUc_udLaYMD4me1qC1-lETHDvOcLSUz4W1E5URBvuEWMMUW_RTrR77yFm-qk6sTV-UgeE-ci6Ge5meNCmIa8c50XD-eKxnS99D7SY9aCfcvWKSO0IqPIHXUwlbCgfLLvWzl3XZYOsHxOXR6Z3GXvBh1vCrE5le3XNptYZAjX4');"></div>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="aspect-square w-full overflow-hidden rounded-lg shadow-md">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBH8wFD3DcLF31Eab-vOWMEYQcrcfgKU0ZsGm8JSB6JBh32mS334npvo4oDCe08SXHlIf_woEd-ueC7xXQez8FSY9kLd_Ov4qJ2LnZUc_udLaYMD4me1qC1-lETHDvOcLSUz4W1E5URBvuEWMMUW_RTrR77yFm-qk6sTV-UgeE-ci6Ge5meNCmIa8c50XD-eKxnS99D7SY9aCfcvWKSO0IqPIHXUwlbCgfLLvWzl3XZYOsHxOXR6Z3GXvBh1vCrE5le3XNptYZAjX4');"></div>
+</div>
+<div class="aspect-square w-full overflow-hidden rounded-lg shadow-md">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXt9t28pEwhMM3fmIDawVtImGgYlpcyvDD7H4yXlp0aBI9UGzk30xeDtCdQ6uykjY6hy5JCpZVg_r4W5DfjU_5tozTbcP1IWq8Hb0ZRzRusKiPYlEGD2cwiqXtvmbXJ04tnKhRHBRA2PtCSQsVfMTQvOYgUyA4WqPbzsIIpTDb38ehT2trX0xNoj0Pp6RzZELRHrSLjegy6R542rGxxpDknMAwcxqmY4KMCcW3JA0D1dl5DIYzFO_E1T5MoRojE3NkAcL2NXmfH_I');"></div>
+</div>
+<div class="aspect-square w-full overflow-hidden rounded-lg shadow-md">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXt9t28pEwhMM3fmIDawVtImGgYlpcyvDD7H4yXlp0aBI9UGzk30xeDtCdQ6uykjY6hy5JCpZVg_r4W5DfjU_5tozTbcP1IWq8Hb0ZRzRusKiPYlEGD2cwiqXtvmbXJ04tnKhRHBRA2PtCSQsVfMTQvOYgUyA4WqPbzsIIpTDb38ehT2trX0xNoj0Pp6RzZELRHrSLjegy6R542rGxxpDknMAwcxqmY4KMCcW3JA0D1dl5DIYzFO_E1T5MoRojE3NkAcL2NXmfH_I');"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col">
+<h1 class="text-4xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">Diseño Floral Primaveral</h1>
+<p class="mt-4 text-lg text-foreground-muted-light dark:text-foreground-muted-dark">Sumérgete en la elegancia con este diseño floral pintado a mano. Cada uña es una pequeña obra de arte, perfecta para añadir un toque de sofisticación y feminidad a tu look. Ideal para eventos especiales o para sentirte radiante en tu día a día.</p>
+<div class="mt-10">
+<div class="border-b border-border-light dark:border-border-dark pb-6">
+<h3 class="text-xl font-semibold text-foreground-light dark:text-foreground-dark">Detalles del Producto</h3>
+<ul class="mt-4 space-y-3 text-base text-foreground-muted-light dark:text-foreground-muted-dark">
+<li class="flex items-start"><span class="font-semibold text-foreground-light dark:text-foreground-dark w-32 shrink-0">Materiales:</span><span>Esmalte de gel de alta durabilidad, pigmentos artísticos para los detalles florales.</span></li>
+<li class="flex items-start"><span class="font-semibold text-foreground-light dark:text-foreground-dark w-32 shrink-0">Entrega:</span><span>Estimada en 5-7 días hábiles.</span></li>
+<li class="flex items-start"><span class="font-semibold text-foreground-light dark:text-foreground-dark w-32 shrink-0">Cuidado:</span><span>Para una mayor duración, evitar el contacto prolongado con agua y químicos. Aplicar top coat cada 7-10 días.</span></li>
+</ul>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="text-xl font-semibold text-foreground-light dark:text-foreground-dark">Opciones de Personalización</h3>
+<div class="mt-6">
+<p class="text-base font-medium mb-3 text-foreground-muted-light dark:text-foreground-muted-dark">Tamaño</p>
+<div class="flex flex-wrap gap-4">
+<label class="group relative flex cursor-pointer"><input class="absolute h-0 w-0 opacity-0" name="size" type="radio"/> <span class="flex h-12 w-28 items-center justify-center rounded-lg border-2 border-border-light dark:border-border-dark text-base font-semibold transition-colors hover:border-primary/50">Pequeño</span></label>
+<label class="group relative flex cursor-pointer"><input checked="" class="absolute h-0 w-0 opacity-0" name="size" type="radio"/> <span class="flex h-12 w-28 items-center justify-center rounded-lg border-2 border-border-light dark:border-border-dark text-base font-semibold transition-colors hover:border-primary/50">Mediano</span></label>
+<label class="group relative flex cursor-pointer"><input class="absolute h-0 w-0 opacity-0" name="size" type="radio"/> <span class="flex h-12 w-28 items-center justify-center rounded-lg border-2 border-border-light dark:border-border-dark text-base font-semibold transition-colors hover:border-primary/50">Grande</span></label>
+</div>
+</div>
+<div class="mt-8">
+<p class="text-base font-medium mb-3 text-foreground-muted-light dark:text-foreground-muted-dark">Forma</p>
+<div class="flex flex-wrap gap-4">
+<label class="group relative flex cursor-pointer"><input class="absolute h-0 w-0 opacity-0" name="shape" type="radio"/> <span class="flex h-12 w-28 items-center justify-center rounded-lg border-2 border-border-light dark:border-border-dark text-base font-semibold transition-colors hover:border-primary/50">Redonda</span></label>
+<label class="group relative flex cursor-pointer"><input class="absolute h-0 w-0 opacity-0" name="shape" type="radio"/> <span class="flex h-12 w-28 items-center justify-center rounded-lg border-2 border-border-light dark:border-border-dark text-base font-semibold transition-colors hover:border-primary/50">Cuadrada</span></label>
+<label class="group relative flex cursor-pointer"><input checked="" class="absolute h-0 w-0 opacity-0" name="shape" type="radio"/> <span class="flex h-12 w-28 items-center justify-center rounded-lg border-2 border-border-light dark:border-border-dark text-base font-semibold transition-colors hover:border-primary/50">Almendra</span></label>
+</div>
+</div>
+</div>
+<div class="mt-12 flex flex-col gap-4 sm:flex-row">
+<button class="flex w-full items-center justify-center rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-transform hover:scale-105 sm:w-auto">Añadir al Carrito - $35.00</button>
+<button class="flex w-full items-center justify-center gap-2 rounded-full bg-background-light dark:bg-border-dark px-8 py-4 text-base font-bold text-foreground-muted-light dark:text-foreground-muted-dark shadow-sm ring-2 ring-inset ring-border-light dark:ring-border-dark transition-colors hover:bg-primary/10 dark:hover:bg-primary/20 sm:w-auto">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+</svg>
+<span>Guardar</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
